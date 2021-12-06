@@ -1,0 +1,221 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+}
+.header{
+	min-height: 100vh;
+	width: 100%;
+	background: #000;
+	color: white;
+	position: relative;
+}
+nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	z-index: 1;
+}
+.logo{
+	text-decoration: none;
+	color: #fff;
+	font-size: 30px;
+	font-weight: 600;
+	padding-top: 10px;
+	padding-left: 10%;
+}
+.nav-links{
+	text-align: right;
+	background: #ff1616;
+	padding: 10px 30px;
+    border-bottom-left-radius: 18px;
+}
+.nav-links ul li{
+	list-style: none;
+	display: inline-block;
+	padding: 10px 25px;
+}
+.nav-links ul li a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 18px;
+}
+.left-sidebar{
+	width: 20%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: #ff1616;
+	border-radius: 10px;
+}
+.row{
+	padding: 0 10%;
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	position: relative;
+	margin-top: 5%;
+}
+
+.left-col{
+	flex-basis: 29%;
+}
+.right-col{
+	flex-basis: 55%;
+}
+.left-col img{
+	width: 80%;
+	cursor: pointer;
+	filter: grayscale(0);
+	border-radius: 15px;
+	transition: filter 1s;
+
+}
+.left-col img:hover{
+	filter: grayscale(1);
+}
+.right-col h1{
+	font-size: 55px;
+	font-weight: bold;
+}
+.right-col p{
+	color: #fff;
+	margin: 20px 0px 10px;
+	font-size: 15px;
+}
+.social-media{
+	display: flex;
+	margin-top: 30px;
+}
+.icon{
+	width: 100px;
+	height: 100px;
+	background: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	border-radius: 6px;
+	overflow: hidden;
+	transition: transform 0.5s;
+}
+.icon{
+	width: 80%;
+	cursor: pointer;
+}
+.icon a{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background: #ff1616;
+	display: flex;
+	align-items: center;
+	opacity: 0;
+	transition: 0.5s;
+}
+.icon a:hover{
+	opacity: 1;
+}
+.icon:hover{
+	transform: translateY(-5px);
+}
+/* skills section styling */
+.skills .title::after{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    padding: 5px;
+    background: #111;
+    transform: translateX(-50%);
+}
+
+.skills .title::after{
+    content: "what i know";
+    position: absolute;
+    bottom: -7px;
+    left: 50%;
+    font-size: 20px;
+    color: #ff1616;
+    padding: 5px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+.skills .skills-content .column{
+    width: calc(50% - 30px);
+}
+.skills .skills-content .left .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.skills .skills-content .left p{
+    text-align: justify;
+}
+.skills .skills-content .left a{
+    display: inline-block;
+    background: #ff1616;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 8px 16px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+.skills .skills-content .left a:hover{
+    color: #ff1616;
+    background: none;
+}
+.skills .skills-content .right .bars{
+    margin-bottom: 15px;
+}
+.skills .skills-content .right .info{
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+.skills .skills-content .right span{
+    font-weight: 500;
+    font-size: 18px;
+}
+.skills .skills-content .right .line{
+    height: 5px;
+    width: 100%;
+    background: lightgrey;
+    position: relative;
+}
+.skills .skills-content .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: crimson;
+}
+.skills-content .right .html::before{
+    width: 90%;
+}
+.skills-content .right .css::before{
+    width: 40%;
+}
+.skills-content .right .js::before{
+    width: 12%;
+}
+.skills-content .right .php::before{
+    width: 1%;
+}
+.skills-content .right .mysql::before{
+    width: 0.0%;
+}
